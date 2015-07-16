@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   
   root 'static_pages#home'
-  get 'static_pages/home', to: redirect('/')
-  get 'static_pages/about', to: redirect('/about')
-  get '/home', to: redirect('/')
   get '/about', to: 'static_pages#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
